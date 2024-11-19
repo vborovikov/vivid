@@ -15,8 +15,8 @@
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageProjectUrl>https://github.com/vborovikov/only</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/vborovikov/only.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/vborovikov/vivid/tree/only</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/vborovikov/vivid.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>wpf;wpf-single-instance;single-instance</PackageTags>
     <PackageReleaseNotes></PackageReleaseNotes>

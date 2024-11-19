@@ -55,7 +55,9 @@ abstract class SingleInstanceService : MarshalByRefObject, IDisposable
     /// to ensure that lease never expires.
     /// </summary>
     /// <returns>Always null.</returns>
+#if NET8_0_OR_GREATER
     [Obsolete]
+#endif
     public sealed override object InitializeLifetimeService()
     {
         return null!;

@@ -2,7 +2,7 @@
 This library enables a WPF app to run as a single instance.
 
 [![Downloads](https://img.shields.io/nuget/dt/Only.svg)](https://www.nuget.org/packages/Only)
-[![NuGet](https://img.shields.io/nuget/v/Only.svg)](https://www.nuget.org/packages/Only)
+[![NuGet](https://img.shields.io/nuget/v/Only.svg)](https://www.nuget.org/packages/Only#versions-body-tab)
 [![MIT](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/vborovikov/only/blob/master/LICENSE)
 
 # Usage
