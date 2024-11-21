@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.8.34322.80
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Only", "Only\Only.csproj", "{22BD0112-B253-4319-9421-C71F6C2CDDD3}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Vivid", "Vivid\Vivid.csproj", "{22BD0112-B253-4319-9421-C71F6C2CDDD3}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SampleApp", "SampleApp\SampleApp.csproj", "{3EF97800-0499-4A63-9C4A-963A8747487D}"
 EndProject
