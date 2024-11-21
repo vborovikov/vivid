@@ -9,7 +9,7 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Only\Only.csproj" />
+    <ProjectReference Include="..\Vivid\Vivid.csproj" />
   </ItemGroup>
 
 </Project>
