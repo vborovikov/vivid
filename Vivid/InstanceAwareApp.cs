@@ -2,11 +2,7 @@
 
 using System;
 using System.Threading;
-#if NET462
-using System.Deployment.Application;
-#else
 using System.Web;
-#endif
 using System.Windows;
 
 /// <summary>
@@ -121,24 +117,6 @@ public class InstanceAwareApp : Application, IDisposable
     {
         string[] args = [];
 
-#if NET462
-        if (AppDomain.CurrentDomain.ActivationContext == null)
-        {
-            // The application was not ClickOnce deployed, get arguments from standard APIs
-            // Skip the executable file name
-            args = Environment.GetCommandLineArgs().Skip(1).ToArray();
-        }
-        else if (ApplicationDeployment.IsNetworkDeployed)
-        {
-            // The application was ClickOnce deployed
-            // ClickOnce deployed apps cannot receive traditional command line arguments
-
-            if (AppDomain.CurrentDomain.SetupInformation.ActivationArguments != null)
-            {
-                args = AppDomain.CurrentDomain.SetupInformation.ActivationArguments.ActivationData;
-            }
-        }
-#else
         if (Environment.GetEnvironmentVariable("ClickOnce_IsNetworkDeployed") is string isNetworkDeployedVar &&
             bool.TryParse(isNetworkDeployedVar, out var isNetworkDeployed) && isNetworkDeployed)
         {
@@ -174,7 +152,6 @@ public class InstanceAwareApp : Application, IDisposable
             // Skip the executable file name
             args = Environment.GetCommandLineArgs()[1..];
         }
-#endif
 
         return args;
     }

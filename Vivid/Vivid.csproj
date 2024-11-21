@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net462;net8.0-windows</TargetFrameworks>
+    <TargetFramework>net8.0-windows</TargetFramework>
     <LangVersion>latest</LangVersion>
     <Nullable>enable</Nullable>
     <UseWPF>true</UseWPF>
@@ -9,24 +9,19 @@
   </PropertyGroup>
 
   <PropertyGroup>
-    <Title>Only</Title>
-    <Description>Single instance app support library for WPF</Description>
-    <PackageId>Only</PackageId>
+    <Title>Vivid Toolkit</Title>
+    <Description>Helper library for WPF</Description>
+    <PackageId>VividTk</PackageId>
     <PackageLicenseExpression>MIT</PackageLicenseExpression>
     <PackageRequireLicenseAcceptance>false</PackageRequireLicenseAcceptance>
     <PackageReadmeFile>README.md</PackageReadmeFile>
-    <PackageProjectUrl>https://github.com/vborovikov/only</PackageProjectUrl>
-    <RepositoryUrl>https://github.com/vborovikov/only.git</RepositoryUrl>
+    <PackageProjectUrl>https://github.com/vborovikov/vivid</PackageProjectUrl>
+    <RepositoryUrl>https://github.com/vborovikov/vivid.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
-    <PackageTags>wpf;wpf-single-instance;single-instance</PackageTags>
+    <PackageTags>wpf;wpf-toolkit;wpf-helper</PackageTags>
     <PackageReleaseNotes></PackageReleaseNotes>
     <GenerateDocumentationFile>True</GenerateDocumentationFile>
   </PropertyGroup>
-
-  <ItemGroup>
-    <Reference Include="System.Deployment" Condition="$(TargetFramework) == 'net462'" />
-    <Reference Include="System.Runtime.Remoting" Condition="$(TargetFramework) == 'net462'" />
-  </ItemGroup>
 
   <ItemGroup>
     <None Include="..\README.md" Pack="true" PackagePath="\" />
